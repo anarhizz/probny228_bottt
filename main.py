@@ -1,10 +1,17 @@
 import telebot
 import datetime
 import threading
+import os
 from connection import key
 
 print(key)
-bot = telebot.TeleBot("7002286280:AAE6b8VLayLXTZrWnIAIm06LEsF7X8vk3HE")
+
+from dotenv import load_dotenv, find_dotenv
+
+
+load_dotenv(find_dotenv())
+
+bot = telebot.TeleBot(os.getenv("TOKEN"))
 
 
 @bot.message_handler(commands=["start"])
