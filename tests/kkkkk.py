@@ -18,7 +18,7 @@ if __name__ == "__name__":
 
     class TestReminderMessage(unittest.TestCase):
         def test_start_message(self):
-    desult = reminder_message("sdjf")
+          desult = reminder_message("sdjf")
 
 
 
@@ -42,7 +42,7 @@ if __name__ == "__name__":
 
 
 class TestHandleAllMeessage(unittest.TestCase):
-    def test_handle_all_message(self)
+    def test_handle_all_message(self):
         chat_id=123
         message=MagicMock()
         message.chat.id=chat_id
