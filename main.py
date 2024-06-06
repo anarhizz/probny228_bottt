@@ -2,6 +2,9 @@ import telebot
 import datetime
 import threading
 import os
+from data_structs import Commands
+from data_structs02 import Texts
+
 from connection import key
 
 print(key)
